@@ -181,10 +181,10 @@ def place_ship(shipname, length, cpu=None):
 
 
 def board_setup():
-    # board.print_board_user()
-    # for i in range(5):
-    #    place_ship(ships[i], lengths[i])
-    #    board.print_board_user()
+    board.print_board_user()
+    for i in range(5):
+        place_ship(ships[i], lengths[i])
+        board.print_board_user()
 
     for i in range(5):
         place_ship(ships[i], lengths[i], True)

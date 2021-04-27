@@ -2,12 +2,14 @@ import string
 
 board_user = {}
 board_cpu = {}
+board_cpu_display = {}
 rows = string.ascii_lowercase[:10]
 
 for letter in rows:
     for i in range(1, 11):
         board_user[letter+str(i)] = " "
         board_cpu[letter+str(i)] = " "
+        board_cpu_display[letter+str(i)] = " "
 
 hor_vert = "___|_____|_____|_____|_____|_____|_____|_____|_____|_____|_____"
 vert = "   |     |     |     |     |     |     |     |     |     |     "
@@ -100,4 +102,49 @@ def print_board_cpu():
     print(vert)
     print(" J |  "+board_cpu["j1"]+"  |  "+board_cpu["j2"]+"  |  "+board_cpu["j3"]+"  |  "+board_cpu["j4"]+"  |  "+board_cpu["j5"] +
           "  |  " + board_cpu["j6"]+"  |  "+board_cpu["j7"]+"  |  "+board_cpu["j8"]+"  |  "+board_cpu["j9"]+"  |  "+board_cpu["j10"]+"  ")
+    print(hor_vert)
+
+
+def print_board_cpu_display():
+    print("   |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  | 10  ")
+    print(hor_vert)
+    print(vert)
+    print(" A |  "+board_cpu_display["a1"]+"  |  "+board_cpu_display["a2"]+"  |  "+board_cpu_display["a3"]+"  |  "+board_cpu_display["a4"]+"  |  "+board_cpu_display["a5"]+"  |  " +
+          board_cpu_display["a6"]+"  |  "+board_cpu_display["a7"]+"  |  "+board_cpu_display["a8"]+"  |  "+board_cpu_display["a9"]+"  |  "+board_cpu_display["a10"]+"  ")
+    print(hor_vert)
+    print(vert)
+    print(" B |  "+board_cpu_display["b1"]+"  |  "+board_cpu_display["b2"]+"  |  "+board_cpu_display["b3"]+"  |  "+board_cpu_display["b4"]+"  |  "+board_cpu_display["b5"]+"  |  " +
+          board_cpu_display["b6"]+"  |  "+board_cpu_display["b7"]+"  |  "+board_cpu_display["b8"]+"  |  "+board_cpu_display["b9"]+"  |  "+board_cpu_display["b10"]+"  ")
+    print(hor_vert)
+    print(vert)
+    print(" C |  "+board_cpu_display["c1"]+"  |  "+board_cpu_display["c2"]+"  |  "+board_cpu_display["c3"]+"  |  "+board_cpu_display["c4"]+"  |  "+board_cpu_display["c5"]+"  |  " +
+          board_cpu_display["c6"]+"  |  "+board_cpu_display["c7"]+"  |  "+board_cpu_display["c8"]+"  |  "+board_cpu_display["c9"]+"  |  "+board_cpu_display["c10"]+"  ")
+    print(hor_vert)
+    print(vert)
+    print(" D |  "+board_cpu_display["d1"]+"  |  "+board_cpu_display["d2"]+"  |  "+board_cpu_display["d3"]+"  |  "+board_cpu_display["d4"]+"  |  "+board_cpu_display["d5"] +
+          "  |  " + board_cpu_display["d6"]+"  |  "+board_cpu_display["d7"]+"  |  "+board_cpu_display["d8"]+"  |  "+board_cpu_display["d9"]+"  |  "+board_cpu_display["d10"]+"  ")
+    print(hor_vert)
+    print(vert)
+    print(" E |  "+board_cpu_display["e1"]+"  |  "+board_cpu_display["e2"]+"  |  "+board_cpu_display["e3"]+"  |  "+board_cpu_display["e4"]+"  |  "+board_cpu_display["e5"] +
+          "  |  " + board_cpu_display["e6"]+"  |  "+board_cpu_display["e7"]+"  |  "+board_cpu_display["e8"]+"  |  "+board_cpu_display["e9"]+"  |  "+board_cpu_display["e10"]+"  ")
+    print(hor_vert)
+    print(vert)
+    print(" F |  "+board_cpu_display["f1"]+"  |  "+board_cpu_display["f2"]+"  |  "+board_cpu_display["f3"]+"  |  "+board_cpu_display["f4"]+"  |  "+board_cpu_display["f5"] +
+          "  |  "+board_cpu_display["f6"]+"  |  "+board_cpu_display["f7"]+"  |  "+board_cpu_display["f8"]+"  |  "+board_cpu_display["f9"]+"  |  "+board_cpu_display["f10"]+"  ")
+    print(hor_vert)
+    print(vert)
+    print(" G |  "+board_cpu_display["g1"]+"  |  "+board_cpu_display["g2"]+"  |  "+board_cpu_display["g3"]+"  |  "+board_cpu_display["g4"]+"  |  "+board_cpu_display["g5"] +
+          "  |  " + board_cpu_display["g6"]+"  |  "+board_cpu_display["g7"]+"  |  "+board_cpu_display["g8"]+"  |  "+board_cpu_display["g9"]+"  |  "+board_cpu_display["g10"]+"  ")
+    print(hor_vert)
+    print(vert)
+    print(" H |  "+board_cpu_display["h1"]+"  |  "+board_cpu_display["h2"]+"  |  "+board_cpu_display["h3"]+"  |  "+board_cpu_display["h4"]+"  |  "+board_cpu_display["h5"] +
+          "  |  " + board_cpu_display["h6"]+"  |  "+board_cpu_display["h7"]+"  |  "+board_cpu_display["h8"]+"  |  "+board_cpu_display["h9"]+"  |  "+board_cpu_display["h10"]+"  ")
+    print(hor_vert)
+    print(vert)
+    print(" I |  "+board_cpu_display["i1"]+"  |  "+board_cpu_display["i2"]+"  |  "+board_cpu_display["i3"]+"  |  "+board_cpu_display["i4"]+"  |  "+board_cpu_display["i5"] +
+          "  |  " + board_cpu_display["i6"]+"  |  "+board_cpu_display["i7"]+"  |  "+board_cpu_display["i8"]+"  |  "+board_cpu_display["i9"]+"  |  "+board_cpu_display["i10"]+"  ")
+    print(hor_vert)
+    print(vert)
+    print(" J |  "+board_cpu_display["j1"]+"  |  "+board_cpu_display["j2"]+"  |  "+board_cpu_display["j3"]+"  |  "+board_cpu_display["j4"]+"  |  "+board_cpu_display["j5"] +
+          "  |  " + board_cpu_display["j6"]+"  |  "+board_cpu_display["j7"]+"  |  "+board_cpu_display["j8"]+"  |  "+board_cpu_display["j9"]+"  |  "+board_cpu_display["j10"]+"  ")
     print(hor_vert)
